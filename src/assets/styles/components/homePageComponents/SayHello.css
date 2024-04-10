@@ -1,0 +1,134 @@
+.sayhello {
+    display: flex;
+}
+.shadowbox {
+    display: flex;
+    flex-direction: row;
+    width: 90vw;
+    height: 85vh;
+    background-color: rgb(255, 248, 248);
+    border-radius: 1vw;
+    padding: 5%;
+    box-shadow: 1px 0px 20px gray;
+
+}
+
+.shadowbox-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.shadowbox-left h1{
+    font-size: 3rem;
+    padding-bottom: 2%;
+    color: rgb(27, 27, 27);
+}
+.shadowbox-left h2 {
+    font-size: 1.2rem;
+    padding-top: 2%;
+    color: rgb(74, 72, 72);
+}
+.shadowbox-left h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding-top: 1%;
+    color: rgb(29, 28, 28);
+}
+.flag {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 2%;
+
+}
+.flag img{
+    height: 2rem;
+    padding-right: 3%;
+}
+.icons-box {
+    display: flex;
+    flex-direction: row;
+    padding-top: 5%;
+}
+.icons {
+    color: rgb(68, 68, 68);
+    font-size: 3rem;
+
+}
+
+.shadowbox-right{
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+    width: 50%;
+    padding-top: 5%;
+}
+.shadowbox-right h6{
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(42, 42, 42);
+    padding-top: 3%;
+}
+.shadowbox-right button {
+    margin-top: 10%;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    border: 2px solid black;
+    border-color: #04aa1d;
+    color: green;
+    border-radius: 5rem;
+    background-color: white;
+    cursor: pointer;
+
+}
+ 
+  .shadowbox-right button:hover {
+    background-color: #05c72c;
+    color: white;
+  }
+.form__field {
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid rgb(3, 193, 35);
+    outline: 0;
+    font-size: 1.3rem;
+    color: white;
+    padding: 7px 5px;
+    background: transparent;
+  
+  }
+  .form__field1 {
+    font-family: inherit;
+    width: 100%;
+    height: 25%;
+    border: 0;
+    border-bottom: 2px solid rgb(3, 193, 35);
+    outline: 0;
+    font-size: 1.3rem;
+    color: white;
+    padding: 7px 5px;
+    background: transparent;
+  
+  }
+
+  /* Responsive screen for mobile & other */
+@media screen and (max-width:700px) {
+    .shadowbox {
+        flex-direction: column;
+        height: 120vh;
+
+    }
+    .shadowbox-left {
+        width: 100%;
+    }
+    .shadowbox-right{
+        width: 100%;
+        padding-top: 15%;
+    }
+
+}
+  

@@ -1,0 +1,44 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    gap:3vh
+}
+.about h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+}
+.about h1 span {
+    color: rgb(4, 202, 4);
+}
+.about h2 {
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+.about p{
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: rgb(37, 37, 37);
+}
+.about h3 {
+    font-size: 2rem;
+    font-weight: 300;
+}
+.about a:hover {
+    text-decoration: underline;
+  }
+
+/* Responsive screen for mobile & other */
+@media screen and (max-width:650px) {
+    .about h1 {
+        font-size: 3rem;
+    }
+    .about h2 {
+        font-size: 2.5rem;
+    }
+    .about p{
+        font-size: 1.1rem;
+    }
+    .about h3 {
+        font-size: 1.5rem;
+    }
+}

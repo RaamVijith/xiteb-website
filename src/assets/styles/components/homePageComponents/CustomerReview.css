@@ -1,0 +1,43 @@
+
+.customerReview {
+    display: flex;
+    flex-direction: column;
+    gap:3vh;
+    padding: 10vh 0 20vh 5vw;
+}
+.customerReview h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+.customerReview img {
+    width: 80px;
+    height: 80px;
+}
+.customerReview h1 span {
+    color: rgb(4, 202, 4);
+}
+.customerReview p{
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: rgb(64, 64, 64);
+    padding: 0% 5%;
+    margin-top: -3%;
+}
+
+.authers {
+    align-self: flex-end;
+    
+    margin-right: 15%;
+}
+.authers h5{
+    font-size: 1.5rem;
+    color: rgb(23, 23, 23);
+    font-weight: 400;
+
+}
+.authers h6{
+    font-size: 1rem;
+    color: rgb(64, 64, 64);
+    font-weight: 400;
+
+}

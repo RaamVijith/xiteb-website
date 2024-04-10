@@ -1,0 +1,104 @@
+.welcome{
+    padding: 2% 5% -5% 5%;
+    display: flex;
+    flex-direction: row;
+    height: 45vw;
+    align-items: center;
+}
+.welcome-left{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: -10% 5%;
+}
+.welcome-left h1{
+    font-size: 3rem;
+    font-weight: 400;  
+    color: rgb(32, 31, 31);  
+}
+/* left animation texts */
+
+.welcome-left h2::before{
+    content: 'Mobile Applications';
+    animation: animate1 infinite 15s;
+    margin-top: 5%;
+    color: rgb(100, 207, 70);
+    font-size: 5.5rem;
+    font-weight: 600;
+}
+@keyframes animate1{
+    0%{
+        content:'Mobile Applications';
+    }
+    25%{
+        content:'eCommerce Platforms'
+    }
+    50%{
+        content:'Software Solutions';
+    }
+    75%{
+        content:'Creative Websites'
+    }
+   
+}
+.welcome-left p::before{
+    content: 'Mobile apps take your brand to clients’ fingertips & position your business as enriched.';
+    animation: animate2 infinite 15s;
+    margin-top: 5%;
+    color: rgb(85, 85, 85);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+@keyframes animate2{
+    0%{
+        content:'Mobile apps take your brand to clients’ fingertips & position your business as enriched.';
+    }
+    25%{
+        content:'eCommerce platform is the only way to sell your products to the end customers.'
+    }
+    50%{
+        content:'Professional Businesses know the importance of Bespoke Software which help reach greater heights.';
+    }
+    75%{
+        content:'Website is the FACE of your business which communicates your solutions & generates sales leads.'
+    }
+    
+}
+.welcome-right{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.welcome-right img{
+    width: 120%;
+    margin-left: -20%;
+    z-index: -1;
+}
+
+/* Responsive screen for mobile & other */
+@media screen and (max-width:650px) {
+    .welcome{
+    padding: 5% 10%;
+    flex-direction: column;
+    height: 45vw;
+    align-items: center;
+    }
+    .welcome-left {
+        width: 100%;
+
+    }
+    .welcome-left h1{
+        font-size: 1.5rem;
+    }
+    .welcome-left h2::before{
+        font-size: 3rem;
+    }
+    .welcome-right{
+        width: 100%;
+    }
+    .welcome-right img{
+        width: 120%;
+        margin-left: 0%;
+        z-index: -1;
+    }
+}

@@ -1,0 +1,50 @@
+.project-top-div {
+    padding: 5px 5% 0px 5%;
+
+}
+.projectsPage {
+    padding: 5px 5% 0px 5%;
+
+}
+.project-left {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 0% 5%;
+    margin-bottom: 10vh;
+}
+.project-left h1{
+    font-size: 3rem;
+    font-weight: 400;  
+    color: rgb(32, 31, 31);  
+}
+.project-left h2{
+    color: rgb(44, 45, 44);
+    font-size: 5.5rem;
+    font-weight: 900; 
+}
+.project-left span{
+    color: rgb(115, 225, 60);
+    font-size: 5.5rem;
+    font-weight: 900; 
+}
+.project-left p{
+    color: rgb(85, 85, 85);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+
+.projectPage-section2 {
+    display: flex;
+    flex-direction: row;
+    gap: 3vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20vh;
+}
+.projectsPage h1{
+    font-size: 3rem;
+    font-weight: 500;  
+    color: rgb(25, 24, 24);  
+}

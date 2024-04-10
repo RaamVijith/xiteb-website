@@ -1,0 +1,10 @@
+.footerBorder {
+    width: 130%;
+    margin-left: -10%;
+    display: flex;
+    justify-content: center;
+    background-color: gray;
+    align-items: baseline;
+    color: aliceblue;
+    margin-top: 20px;
+}

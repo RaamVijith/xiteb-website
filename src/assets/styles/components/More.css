@@ -1,0 +1,102 @@
+.more{
+    z-index: 110;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    margin: 2% 5%;
+    height: 90vh;
+    width: 90vw;
+    backdrop-filter: blur(100px) ;
+    background-color: rgba(0, 0, 0, 0.1); 
+    border-radius: 1vw; 
+}
+.close{
+    color: aliceblue;
+    position: absolute;
+    font-size: 2rem;
+    padding: 2px;
+    
+    
+}
+.more-left{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 10%;
+    align-items: center;
+}
+.more-left-list {
+    list-style: none;
+    
+}
+.more-left-list li {
+    font-size: 2rem;
+    color: rgb(255, 252, 252);
+    font-weight: 800;
+    padding-bottom: 20px;
+}
+.more-left-list a{
+    color: rgb(255, 255, 255);
+}
+.more-left-list a:hover{
+    color: rgb(21, 252, 21);
+}
+
+
+.more-right {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 10%;
+    gap: 10px;
+}
+.more-right h5{
+    font-size: 2.3rem;
+    font-weight: 500;
+    color: whitesmoke;
+}
+.more-right p{
+    color: white;
+    font-size: 1rem;
+}
+.icons-group{
+    margin-top: 50px;
+}
+.icons{
+    font-size: 2rem;
+    margin-right: 20px;
+    
+}
+
+
+
+/* Responsive screen for mobile & other */
+@media screen and (max-width:1000px){
+    .more-right h5{
+        font-size: 1.8rem;
+        
+    }
+    .more-right p{
+        color: white;
+        font-size: 0.8rem;
+    }
+    .icons-group{
+        margin-top: 40px;
+    }
+    .icons{
+        font-size: 1.5rem;
+        margin-right: 20px;
+        
+    }
+}
+
+@media screen and (max-width:700px){
+    .more-right {
+    display: none;
+    }
+    .more-left{
+        justify-content: center;
+        width: 100%;
+
+    }
+}

@@ -1,0 +1,122 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 5%;
+    z-index: 10;
+    position: sticky; /* Set the navbar to fixed position */
+    top: 0; 
+    width: 100%;
+    backdrop-filter: blur(5px); 
+}
+.nav--logo {
+    align-items: center;
+}
+.header--right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:50px;   
+}
+.header--right button {
+    padding: 5px 25px;
+    border:2px solid gray;
+    border-radius: 20px;
+    height: 40px;
+    font-size: 1rem;
+    backdrop-filter: blur(3px);
+    background: transparent;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.header--right button:hover {
+    background: #434343;
+    color: whitesmoke;
+letter-spacing: 1px;
+-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+transition: all 0.4s ease 0s;
+}
+.nav--list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap:50px;
+    font-size: 1rem;
+}
+.nav--list li{
+    flex-direction: row;
+    display: flex;
+}
+.nav--list a{
+    color:gray;
+}
+.nav--list a:hover{
+    color: rgb(4, 165, 4);
+}
+.arrow {
+    font-size: 1.3rem;
+    gap:30px
+}
+.extra-more {
+    display: none;
+}
+
+
+/* Responsive screen for mobile & other */
+@media screen and (max-width:1000px) {
+    .header--right button{
+        display: none;
+    }
+    .nav--list {
+        display: none;
+    }
+    .extra-more {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .extra-more a {
+        font-size: 1.3rem;
+        align-items: center;
+        color: gray;
+    }
+    
+ }
+
+
+
+ /* new */
+ .modal, .overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}
+
+.overlay {
+    background: rgba(49,49,49,0.8);
+}
+.modal-content {
+    position: absolute;
+    top: 5%;
+    left: 12%;
+    transform: translate(-50%, -50%);
+    
+    padding: 14px 28px;
+    border-radius: 3px;
+    max-width: 600px;
+    min-width: 300px;
+}
+
+.close-modal {
+    position: absolute;
+    top: 10%;
+    right: 10px;
+    padding: 5px 7px;
+    z-index: 1000;
+}
