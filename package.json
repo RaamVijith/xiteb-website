@@ -1,6 +1,6 @@
 {
   "name": "xitab-website",
-  "private": false,
+  "private": true,
   "version": "0.0.0",
   "homepage": "https://raamvijith.github.io/xiteb-website",
   "type": "module",
