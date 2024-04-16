@@ -78,13 +78,16 @@
     display: flex;
     width: 50%;   
     flex-direction: column;
+    height: auto;
 }
 .div1 {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    padding: 20% 10% 5% 0%;
+    padding: 0% 10% 5% 0%;
+    margin-top: 15%;
     gap: 2%;
+    justify-content: center;
 }
 .div1 h1 {
     font-size: 3rem;
@@ -126,19 +129,19 @@
 /* Responsive screen for mobile & other */
 @media screen and (max-width:700px) {
     .box1-img {
-        width: 25rem;
+        width: 55vw;
         margin-left: 10%;
     }
     .box2-img {
-        width: 35rem;
+        width: 75vw;
         margin-left: -5%;
     }
     .box3-img {
-        width: 25rem;
+        width: 65vw;
         margin-left: -5%;
     }
     .box4-img {
-        width: 30rem;
+        width: 60vw;
         margin-left: 5%;
     }
 }

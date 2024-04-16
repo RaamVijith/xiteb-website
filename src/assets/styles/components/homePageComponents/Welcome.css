@@ -76,7 +76,7 @@
 }
 
 /* Responsive screen for mobile & other */
-@media screen and (max-width:650px) {
+@media screen and (max-width:700px) {
     .welcome{
     padding: 5% 10%;
     flex-direction: column;
